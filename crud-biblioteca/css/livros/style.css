@@ -1,0 +1,94 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Cabeçalho e rodapé */
+header, footer {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+nav {
+    margin-top: 12px;
+}
+
+nav a {
+    color: #dddddd;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #3dc1d3;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    margin-top: 18px;
+    background-color: #3dc1d3;
+    color: #ffffff;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2a8b99;
+}
+
+/* Tabela */
+table {
+    margin: 25px auto;
+    border-collapse: collapse;
+    width: 92%;
+    max-width: 950px;
+    background: #222222;
+    color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #1a1a1a;
+}
+
+th, td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #333333;
+    text-align: left;
+}
+
+/* Botão de excluir */
+.btn-danger {
+    background-color: #d9534f;
+}
+
+.btn-danger:hover {
+    background-color: #b52b27;
+}

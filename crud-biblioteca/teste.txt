@@ -1,0 +1,37 @@
+Elaborará CRUD básico que consistirá em um sistema com as seguintes funcionalidades: 
+a. Cadastro de Aluno i. Campos: RA, Nome, email, telefone e Data de Nascimento 
+b. Cadastro de Livros i. Campos: Código, Título, Autor, Categoria e Editora 
+c. Cadastro de empréstimos de livros i. Campos: Código, Data Retirada e Entrega 
+d. Funcionalidades livres a critério do candidato.
+
+
+/crud-biblioteca/
+│
+├── /alunos/
+│   ├── listar.php
+│   ├── adicionar.php
+│   ├── editar.php
+│   ├── excluir.php
+│
+├── /livros/
+│   ├── listar.php
+│   ├── adicionar.php
+│   ├── editar.php
+│   ├── excluir.php
+│
+├── /emprestimos/
+│   ├── listar.php
+│   ├── adicionar.php
+│   ├── editar.php
+│   ├── excluir.php
+│
+├── /includes/
+│   ├── conexao.php
+│   ├── header.php
+│   ├── footer.php
+│
+├── /css/
+│   └── style.css
+│
+├── index.php
+└── README.md

@@ -1,0 +1,134 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GERAL */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #1abc9c;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Container para os cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Card */
+.card {
+    background-color: #1f1f1f;
+    padding: 25px 20px;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px #1abc9c;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #1abc9c;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: #ccc;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+.btn {
+    background-color: #1abc9c;
+    color: #ffffff;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #16a085;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #1f1f1f;
+    color: #999;
+    text-align: center;
+    padding: 15px;
+    margin-top: 60px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
